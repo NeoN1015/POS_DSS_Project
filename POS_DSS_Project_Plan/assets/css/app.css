@@ -1,0 +1,120 @@
+:root {
+  --pos-navy: #12263f;
+  --pos-navy-2: #1b3654;
+  --pos-accent: #2a9d8f;
+  --pos-accent-2: #e9c46a;
+  --pos-bg: #f4f6f8;
+  --pos-sidebar-w: 260px;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body.app-body {
+  background: var(--pos-bg);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body.auth-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(42, 157, 143, 0.25), transparent 40%),
+    linear-gradient(160deg, #12263f 0%, #1b3654 55%, #0e1a2b 100%);
+}
+
+.auth-card {
+  max-width: 420px;
+  border: 0;
+  border-radius: 16px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--pos-accent);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.app-sidebar {
+  width: var(--pos-sidebar-w);
+  background: var(--pos-navy);
+  min-height: 100vh;
+}
+
+.app-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+}
+
+.app-sidebar .nav-link:hover,
+.app-sidebar .nav-link.active {
+  background: var(--pos-navy-2);
+  color: #fff;
+}
+
+.app-sidebar .nav-link.active {
+  box-shadow: inset 3px 0 0 var(--pos-accent);
+}
+
+.app-sidebar .nav-section {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 1rem 0.85rem 0.35rem;
+}
+
+.app-main {
+  min-height: 100vh;
+}
+
+.app-topbar {
+  background: #fff;
+  border-bottom: 1px solid #e6ebf0;
+}
+
+.role-pill {
+  background: rgba(42, 157, 143, 0.12);
+  color: #1b7a70;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.placeholder-tile {
+  border: 1px dashed #cfd8e3;
+  background: #fff;
+  border-radius: 12px;
+}
+
+@media (max-width: 991.98px) {
+  .app-sidebar {
+    min-height: auto;
+  }
+
+  .app-topbar,
+  main,
+  footer {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+
+  .app-sidebar .nav-link,
+  .offcanvas-body a {
+    min-height: 44px;
+  }
+}
+
+@media (display-mode: standalone) {
+  body.app-body,
+  body.auth-body {
+    padding-top: env(safe-area-inset-top);
+  }
+}

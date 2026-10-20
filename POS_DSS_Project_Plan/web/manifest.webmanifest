@@ -1,0 +1,14 @@
+{
+  "name": "POS DSS",
+  "short_name": "POS DSS",
+  "description": "Point of Sale with basic decision support for SMEs.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#12263f",
+  "theme_color": "#12263f",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

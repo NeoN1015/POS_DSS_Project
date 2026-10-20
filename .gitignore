@@ -1,0 +1,49 @@
+@'
+# Dependencies
+node_modules/
+frontend/node_modules/
+*/node_modules/
+
+# Build output
+dist/
+build/
+frontend/dist/
+frontend/android/build/
+frontend/android/app/build/
+frontend/android/.gradle/
+frontend/android/capacitor-cordova-android-plugins/build/
+frontend/android/app/capacitor.build.gradle.bak
+*.apk
+*.aab
+
+# Android local/secret
+frontend/android/local.properties
+frontend/android/.idea/
+frontend/android/captures/
+frontend/android/.cxx/
+*.keystore
+*.jks
+keystore.properties
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python (if backend has one)
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+'@ | Set-Content -Path .gitignore -Encoding ASCII
