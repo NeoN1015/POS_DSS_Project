@@ -167,4 +167,4 @@ npm run build
 
 ## 👤 Author & License
 Developed as a Decision Support & Point of Sale System for SMEs.
-Licensed under the MIT License.
+
