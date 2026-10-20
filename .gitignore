@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and local configs
+.env
+.env.local
+*.local
+
+# SQLite temporary WAL / journal files (keep the seed sqlite if desired)
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+
+# Archives and large temporary zips
+*.zip
+*.tar.gz
+*.rar
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build artifacts
+frontend/dist/
