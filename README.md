@@ -25,21 +25,7 @@ Sign in with any of the built-in demo profiles directly from the login screen:
 
 ---
 
-## 📸 Interactive System Modules & Demo Overview
 
-```
-+---------------------------------------------------------------------------------------------------+
-|  POS DSS  [ 👑 Administrator ]   [ 10:24:32 AM • Wed, Oct 21 ]   [ 🔔 2 Low Stock ]   [ 🌙 Theme ] |
-+---------------------------------------------------------------------------------------------------+
-| [📊 Dashboard]  |  REVENUE: $1,420.50   PROFIT: $485.20   LOW STOCK: 2 items   TOTAL SALES: 18    |
-| [🛍️ Point of Sale]|--------------------------------------------------------------------------------|
-| [📦 Inventory]  |  [📈 Sales & Revenue Trend (Dual-Axis)]   | [📊 Inventory Stock Status Bar]     |
-| [📈 Margins]    |  Today / 7 Days / 30 Days                 | Green = OK | Yellow = Warn | Red = Low|
-| [🧾 Invoices]   |  Gross Revenue vs. Net Profit Curves      | Horizontal Stock Level per Product  |
-| [⚙️ Settings]   |--------------------------------------------------------------------------------|
-| [🚪 Log out]    |  [✨ Top Selling Ranking (DSS)]           | [⚠️ Urgent Reorder Recommendations] |
-+---------------------------------------------------------------------------------------------------+
-```
 
 ### 1. 🛍️ Point of Sale Component (`POSView.jsx`)
 - **Category-First Drilldown**:
