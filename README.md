@@ -147,6 +147,7 @@ php -S 127.0.0.1:8000
 Open your browser and navigate to:
 ```text
 http://127.0.0.1:8000/
+
 ```
 The root URL redirects directly to the compiled modern React application in `web/`.
 
